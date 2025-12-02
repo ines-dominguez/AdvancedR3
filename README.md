@@ -1,10 +1,10 @@
-TODO: Add more to the title of your project here
+TODO: Learning Reproducible R
 
 # AdvancedR3:
 
 TODO: Give a brief description of what your project is about
 
-This project...
+This project is about learning to code with reproducibility in R
 
 # Brief description of folder and file contents
 
@@ -21,8 +21,8 @@ The following folders contain:
 
 If dependencies have been managed by using
 `usethis::use_package("packagename")` through the `DESCRIPTION` file,
-installing dependencies is as easy as opening the
-`AdvancedR3.Rproj` file and running this command in the console:
+installing dependencies is as easy as opening the `AdvancedR3.Rproj`
+file and running this command in the console:
 
 ```         
 # install.packages("pak")
