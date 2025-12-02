@@ -5,11 +5,11 @@
 
 # Load packages required to define the pipeline:
 library(targets)
-# library(tarchetypes) # Load other packages as needed.
+library(tarchetypes) # Load other packages as needed.
 
 # Set target options:
 tar_option_set(
-  #packages = c("tibble") # Packages that your targets need for their tasks.
+  # packages = c("tibble") # Packages that your targets need for their tasks.
   # format = "qs", # Optionally set the default storage format. qs is fast.
   #
   # Pipelines that take a long time to run may benefit from
@@ -52,13 +52,18 @@ tar_source()
 list(
   tar_target(
     name = file,
-    command = "data/lipidomics.csv",  #this is to indicate target that there is a file
+    command = "data/lipidomics.csv", # this is to indicate target that there is a file
     format = "file",
   ),
   tar_target(
     name = lipidomics,
     command = readr::read_csv(file,
-                              show_col_types = FALSE)
+      show_col_types = FALSE
+    )
+  ),
+  tar_quarto(
+    name = quarto_doc,
+    path = "docs/learning.qmd"
   )
 )
 
