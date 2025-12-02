@@ -14,6 +14,8 @@ usethis::use_package("here")
 usethis::use_package("snakecase")
 usethis::use_package("readr")
 usethis::use_package("fs")
+usethis::use_package("targets")
+targets::use_targets()
 
 # Download dataset --------------------------------------------------------
 
