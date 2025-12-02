@@ -13,9 +13,9 @@ data, docs and R folders.
 
 The following folders contain:
 
--   `data/`:
--   `docs/`:
--   `R/`:
+-   `data/`: bbdd
+-   `docs/`: quarto output
+-   `R/`: functions
 
 # Installing project R package dependencies
 
